@@ -13,3 +13,5 @@ __version__      = '0.1'
 __url__          = 'https://github.com/verifid/ner-d'
 __download_url__ = 'https://github.com/verifid/ner-d'
 __description__  = 'Python module for Named Entity Recognition (NER).'
+
+from nerd import ner

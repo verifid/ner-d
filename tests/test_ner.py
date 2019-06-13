@@ -16,3 +16,11 @@ class NerTest(unittest.TestCase):
         self.assertEqual(result, [('The', 'DT'), ('four-time', 'JJ'), ('Tour', 'NNP'), ('de', 'FW'), ('France', 'NNP'), ('champion', 'NN'), (',', ','), ('34', 'CD'), (',', ','), ('has', 'VBZ'), ('suffered', 'VBN'), ('a', 'DT'), ('fractured', 'JJ'), ('right', 'NN'), ('femur', 'NN'), (',', ','), ('a', 'DT'), ('broken', 'JJ'), ('hip', 'NN'), (',', ','), ('a', 'DT'), ('fracturedelbow', 'NN'), ('and', 'CC'), ('fractured', 'VBD'), ('ribs', 'NNS'), ('and', 'CC'), ('lost', 'VBN'), ('consciousness', 'NN'), ('following', 'VBG'), ('the', 'DT'), ('crash', 'NN'), ('.', '.')])
         result = ner.preprocess('Michael Jordan born 17.02.1963 in New York is an American basketballer.')
         self.assertEqual(result, [('Michael', 'NNP'), ('Jordan', 'NNP'), ('born', 'VBD'), ('17.02.1963', 'CD'), ('in', 'IN'), ('New', 'NNP'), ('York', 'NNP'), ('is', 'VBZ'), ('an', 'DT'), ('American', 'JJ'), ('basketballer', 'NN'), ('.', '.')])
+
+    def test_load_model(self):
+        nlp = ner.load_model()
+        self.assertIsNotNone(nlp)
+        nlp = ner.load_model(language='de_core_news_sm')
+        self.assertIsNotNone(nlp)
+        nlp = ner.load_model(language='tr_core_news_sm')
+        self.assertIsNone(nlp)

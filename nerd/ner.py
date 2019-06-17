@@ -17,7 +17,7 @@ supported_languages = ['en_core_web_sm', 'de_core_news_sm', 'fr_core_news_sm',
 def download_model(model_name):
     download(model_name)
     package_path = get_package_path(model_name)
-    link(model_name, model_name, force=True, package_path=package_path)
+    link(model_name, model_name, force=True, model_path=package_path)
 
 def load_model(language='en_core_web_sm'):
     """

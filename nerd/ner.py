@@ -6,15 +6,18 @@ import sys
 import subprocess
 import spacy
 
-__download_url__ = "https://github.com/explosion/spacy-models/releases/download"
-__version__ = '2.1.0'
+from spacy.cli.download import download
+from spacy.cli import link
+from spacy.util import get_package_path
+
 supported_languages = ['en_core_web_sm', 'de_core_news_sm', 'fr_core_news_sm',
                        'es_core_news_sm', 'pt_core_news_sm', 'it_core_news_sm',
                        'nl_core_news_sm', 'el_core_news_sm', 'xx_ent_wiki_sm']
 
-def download_model(filename):
-    cmd = [sys.executable, '-m', 'spacy', 'download', filename]
-    return subprocess.call(cmd, env=os.environ.copy())
+def download_model(model_name):
+    download(modelname)
+    package_path = get_package_path(model_name)
+link(model_name, model_name, force=True, package_path=package_path)
 
 def load_model(language='en_core_web_sm'):
     """

@@ -59,5 +59,5 @@ def name(text, language='en_core_web_sm'):
         nlp = spacy.load(language)
     except IOError:
         nlp = load_model(language)
-    doc = nlp(str(text))
+    doc = nlp(unicode(text, 'utf-8'))
     return doc

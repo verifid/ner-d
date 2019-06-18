@@ -41,3 +41,23 @@ def load_model(language='en_core_web_sm'):
     download_model(language)
     nlp = spacy.load(language)
     return nlp
+
+def name(text, language='en_core_web_sm'):
+    """
+    Find related name entities from given text.
+
+        >>> from nerd impor ner
+        >>> ner.name('another text given as parameter for name entity recognition', language='en_core_web_sm')
+
+    :param text: Group of words or sentences.
+    :type text: str
+    :param language: Language package name, shortcut link or model path.
+    :type language: str
+    """
+
+    try:
+        nlp = spacy.load(language)
+    except IOError:
+        nlp = load_model(language)
+    doc = nlp(str(text))
+    return doc

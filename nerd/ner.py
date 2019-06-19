@@ -63,4 +63,4 @@ def name(text, language='en_core_web_sm'):
         doc = nlp(unicode(text, 'utf-8'))
     except NameError:
         doc = nlp(text)
-    return doc
+    return doc.ents

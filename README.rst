@@ -1,6 +1,12 @@
 ner-d
 =====
 
+.. image:: https://img.shields.io/pypi/v/ner-d.svg
+    :target: https://pypi.org/pypi/ner-d/
+
+.. image:: https://img.shields.io/pypi/pyversions/ner-d.svg
+    :target: https://pypi.org/project/ner-d
+
 .. image:: https://travis-ci.org/verifid/ner-d.svg?branch=master
     :target: https://travis-ci.org/verifid/ner-d
 

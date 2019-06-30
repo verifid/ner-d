@@ -59,7 +59,7 @@ def name(text, language='en_core_web_sm'):
     """
     Find related name entities from given text.
 
-        >>> from nerd impor ner
+        >>> from nerd import ner
         >>> ner.name('another text given as parameter for name entity recognition', language='en_core_web_sm')
 
     :param text: Group of words or sentences.

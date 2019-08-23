@@ -1,2 +1,4 @@
 [paths]
 source = nerd/
+[run]
+omit = nerd/__main__.py

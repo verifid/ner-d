@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "ner.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/nerd/ner.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "__main__.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/nerd/__main__.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: Current File (Integrated Terminal)",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        }
+    ]
+}

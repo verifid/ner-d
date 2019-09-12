@@ -11,7 +11,7 @@ __copyright__    = 'Copyright (c) 2019 Abdullah Selek'
 __license__      = 'MIT License'
 __version__      = '0.2'
 __url__          = 'https://github.com/verifid/ner-d'
-__download_url__ = 'https://github.com/verifid/ner-d'
+__download_url__ = 'https://pypi.org/project/ner-d/'
 __description__  = 'Python module for Named Entity Recognition (NER).'
 
 from nerd import ner

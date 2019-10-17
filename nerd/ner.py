@@ -10,6 +10,7 @@ from spacy.cli.download import download
 from spacy.cli import link
 from spacy.util import get_package_path
 
+
 supported_languages = ['en_core_web_sm', 'de_core_news_sm', 'fr_core_news_sm',
                        'es_core_news_sm', 'pt_core_news_sm', 'it_core_news_sm',
                        'nl_core_news_sm', 'el_core_news_sm', 'xx_ent_wiki_sm']
@@ -31,6 +32,7 @@ def download_model(model_name):
     download(model_name)
     package_path = get_package_path(model_name)
     link(model_name, model_name, force=True, model_path=package_path)
+
 
 def load_model(language='en_core_web_sm'):
     """
@@ -54,6 +56,7 @@ def load_model(language='en_core_web_sm'):
     download_model(language)
     nlp = spacy.load(language)
     return nlp
+
 
 def name(text, language='en_core_web_sm'):
     """

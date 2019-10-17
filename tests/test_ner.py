@@ -11,6 +11,7 @@ class NerTest(unittest.TestCase):
         nlp = ner.load_model()
         self.assertIsNotNone(nlp)
 
+
     def test_name(self):
         doc = ner.name("""GitHub launched April 10, 2008, a subsidiary of Microsoft, is an American web-based hosting service for version control using Git.
                        It is mostly used for computer code. It offers all of the distributed version control and source code management (SCM) functionality

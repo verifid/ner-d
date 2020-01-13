@@ -13,7 +13,8 @@ from spacy.util import get_package_path
 
 supported_languages = ['en_core_web_sm', 'de_core_news_sm', 'fr_core_news_sm',
                        'es_core_news_sm', 'pt_core_news_sm', 'it_core_news_sm',
-                       'nl_core_news_sm', 'el_core_news_sm', 'xx_ent_wiki_sm']
+                       'nl_core_news_sm', 'el_core_news_sm', 'nb_core_news_sm',
+                       'lt_core_news_sm', 'xx_ent_wiki_sm']
 
 def download_model(model_name):
     """

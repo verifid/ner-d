@@ -13,9 +13,6 @@ ner-d
 .. image:: https://codecov.io/gh/verifid/ner-d/branch/master/graph/badge.svg
     :target: https://codecov.io/gh/verifid/ner-d
 
-.. image:: https://readthedocs.org/projects/ner-d/badge/?version=latest
-    :target: http://ner-d.readthedocs.org/en/latest/?badge=latest
-
 **ner-d** is a Python module for Named Entity Recognition (NER). Named entity recognition (NER) (also known as entity identification, entity chunking and entity extraction)
 is a subtask of information extraction that seeks to locate and classify named entity mentions in unstructured text into pre-defined categories such as the person
 names, organizations, locations, medical codes, time expressions, quantities, monetary values, percentages, etc.

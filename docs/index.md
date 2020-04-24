@@ -6,7 +6,7 @@
 [![codecov](https://codecov.io/gh/verifid/ner-d/branch/master/graph/badge.svg)](https://codecov.io/gh/verifid/ner-d)
 
 
-**Documentation**: <a href="https://ner-d.verifid.app" target="_blank">https://ner-d.verifid.app</a>
+**Documentation**: <a href="https://nerd.verifid.app" target="_blank">https://nerd.verifid.app</a>
 
 **Source Code**: <a href="https://github.com/verifid/ner-d" target="_blank">https://github.com/verifid/ner-d</a>
 

@@ -1,6 +1,6 @@
-site_name: ner-d
+site_name: nerd
 site_description: Python module for Named Entity Recognition (NER) using natural language processing.
-site_url: https://ner-d.verifid.app/
+site_url: https://nerd.verifid.app/
 theme:
   name: material
   palette:

@@ -11,10 +11,20 @@ from spacy.cli import link
 from spacy.util import get_package_path
 
 
-supported_languages = ['en_core_web_sm', 'de_core_news_sm', 'fr_core_news_sm',
-                       'es_core_news_sm', 'pt_core_news_sm', 'it_core_news_sm',
-                       'nl_core_news_sm', 'el_core_news_sm', 'nb_core_news_sm',
-                       'lt_core_news_sm', 'xx_ent_wiki_sm']
+supported_languages = [
+    "en_core_web_sm",
+    "de_core_news_sm",
+    "fr_core_news_sm",
+    "es_core_news_sm",
+    "pt_core_news_sm",
+    "it_core_news_sm",
+    "nl_core_news_sm",
+    "el_core_news_sm",
+    "nb_core_news_sm",
+    "lt_core_news_sm",
+    "xx_ent_wiki_sm",
+]
+
 
 def download_model(model_name: str):
     """
@@ -35,7 +45,7 @@ def download_model(model_name: str):
     link(model_name, model_name, force=True, model_path=package_path)
 
 
-def load_model(language: str = 'en_core_web_sm'):
+def load_model(language: str = "en_core_web_sm"):
     """
     Loads language trained model.
 
@@ -59,7 +69,7 @@ def load_model(language: str = 'en_core_web_sm'):
     return nlp
 
 
-def name(text: str, language: str = 'en_core_web_sm'):
+def name(text: str, language: str = "en_core_web_sm"):
     """
     Find related name entities from given text.
 
@@ -78,7 +88,7 @@ def name(text: str, language: str = 'en_core_web_sm'):
     except IOError:
         nlp = load_model(language)
     try:
-        doc = nlp(unicode(text, 'utf-8'))
+        doc = nlp(unicode(text, "utf-8"))
     except NameError:
         doc = nlp(text)
     return doc.ents

@@ -7,20 +7,27 @@ import argparse
 from nerd import ner
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
-    parser = argparse.ArgumentParser(description='CLI - Python module for Named Entity Recognition (NER).')
-    parser.add_argument('-d', '--download', type=str, help='Language model name to download.')
-    parser.add_argument('-l', '--load', type=str, help='Load downloaded language model.')
-    parser.add_argument('-n', '--name', type=str, help='Find entities from given text.')
+    parser = argparse.ArgumentParser(
+        description="CLI - Python module for Named Entity Recognition (NER)."
+    )
+    parser.add_argument(
+        "-d", "--download", type=str, help="Language model name to download."
+    )
+    parser.add_argument(
+        "-l", "--load", type=str, help="Load downloaded language model."
+    )
+    parser.add_argument("-n", "--name", type=str, help="Find entities from given text.")
     args = parser.parse_args()
 
     if len(sys.argv) < 2:
-        print('Specify a key to use')
+        print("Specify a key to use")
         sys.exit(1)
 
     try:
         import argcomplete
+
         argcomplete.autocomplete(parser)
     except ImportError:
         pass
